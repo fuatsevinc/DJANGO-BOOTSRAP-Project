@@ -1,0 +1,28 @@
+{% load static %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href={% static 'index.html' %}>Fuat Sevinc</a></h1>
+          <!-- .navbar {% static 'assets/img/favicon.png' %} -->
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href={% static '#hero' %}>Home</a></li>
+              <li><a class="nav-link scrollto" href={% static '#about' %}>About</a></li>
+              <li><a class="nav-link scrollto" href={% static '#services' %}>Services</a></li>
+              <li><a class="nav-link scrollto " href={% static '#portfolio' %}>Portfolio</a></li>
+              <li><a class="nav-link scrollto" href={% static '#team' %}>Team</a></li>
+              <li><a class="nav-link  " href={% static 'blog.html' %}>Blog</a></li>
+              <li><a class="nav-link scrollto" href={% static '#contact' %}>Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- End Header -->
