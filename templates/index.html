@@ -151,10 +151,10 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="about-col">
               <div class="img">
-                <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/about-mission.jpg' %} alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-bar-chart"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <h2 class="title"><a href={% static '#' %}>Our Mission</a></h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
@@ -164,10 +164,10 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="about-col">
               <div class="img">
-                <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/about-plan.jpg' %} alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-brightness-high"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <h2 class="title"><a href={% static '#' %}>Our Plan</a></h2>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
               </p>
@@ -177,7 +177,7 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="about-col">
               <div class="img">
-                <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/about-vision.jpg' %} alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-calendar4-week"></i></div>
               </div>
               <h2 class="title"><a href="#">Our Vision</a></h2>
@@ -397,9 +397,9 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/card2.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/card2.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
@@ -412,13 +412,13 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/web2.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/web2.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/web2.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Web 2</a></h4>
+              <h4><a href={% static 'portfolio-details.html' %}>Web 2</a></h4>
               <p>Web</p>
             </div>
           </div>
@@ -427,13 +427,13 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/app3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/app3.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/app3.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 3</a></h4>
+              <h4><a href={% static 'portfolio-details.html' %}>App 3</a></h4>
               <p>App</p>
             </div>
           </div>
@@ -442,13 +442,13 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card1.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/card1.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/card1.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Card 1</a></h4>
+              <h4><a href={% static 'portfolio-details.html' %}>Card 1</a></h4>
               <p>Card</p>
             </div>
           </div>
@@ -457,13 +457,13 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/card3.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/card3.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/card3.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Card 3</a></h4>
+              <h4><a href={% static 'portfolio-details.html' %}>Card 3</a></h4>
               <p>Card</p>
             </div>
           </div>
@@ -472,13 +472,13 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
             <figure>
-              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/web1.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
-              <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <img src={% static 'assets/img/portfolio/web1.jpg' %} class="img-fluid" alt="">
+              <a href={% static 'assets/img/portfolio/web1.jpg' %} class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+              <a href={% static 'portfolio-details.html' %} class="link-details" title="More Details"><i class="bi bi-link"></i></a>
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Web 1</a></h4>
+              <h4><a href={% static 'portfolio-details.html' %}>Web 1</a></h4>
               <p>Web</p>
             </div>
           </div>
