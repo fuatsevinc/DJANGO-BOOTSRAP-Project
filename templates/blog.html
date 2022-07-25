@@ -9,24 +9,24 @@
   <title>Blog - Fuat Sevinc Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href={% static 'assets/img/favicon.png' %} rel="icon">
+  <link href={% static 'assets/img/apple-touch-icon.png' %} rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href={% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700' %} rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href={% static 'assets/vendor/animate.css/animate.min.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/aos/aos.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/glightbox/css/glightbox.min.css' %} rel="stylesheet">
+  <link href={% static 'assets/vendor/swiper/swiper-bundle.min.css' %} rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href={% static 'assets/css/style.css' %}  rel="stylesheet">
 
  
 </head>
@@ -39,36 +39,19 @@
 
       <div class="row justify-content-center align-items-center">
         <div class="col-xl-11 d-flex align-items-center justify-content-between">
-          <h1 class="logo"><a href="index.html">Fuat Sevinc</a></h1>
+          <h1 class="logo"><a href={% static 'index.html' %}>Fuat Sevinc</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
-              <li><a class="nav-link scrollto" href="#services">Services</a></li>
-              <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link scrollto" href="#team">Team</a></li>
-              <li><a class="nav-link  active" href="blog.html">Blog</a></li>
-              <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li>
-              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li><a class="nav-link scrollto "  href={% static '#hero' %}>Home</a></li>
+              <li><a class="nav-link scrollto"   href={% static '#about' %}>About</a></li>
+              <li><a class="nav-link scrollto"   href={% static '#services' %}>Services</a></li>
+              <li><a class="nav-link scrollto "  href={% static '#portfolio' %}>Portfolio</a></li>
+              <li><a class="nav-link scrollto"   href={% static '#team' %}>Team</a></li>
+              <li><a class="nav-link  active"    href={% static 'blog.html' %}>Blog</a></li>
+              <li><a class="nav-link scrollto"   href={% static '#contact' %}>Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -85,7 +68,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href={% static 'index.html' %}>Home</a></li>
         </ol>
         <h2>Blog</h2>
 
@@ -103,18 +86,18 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/blog/blog-1.jpg' %} alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                <a href={% static 'blog-single.html' %}>Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i>    <a href={% static 'blog-single.html' %}>John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>     <a href={% static 'blog-single.html' %}><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href={% static 'blog-single.html' %}>12 Comments</a></li>
                 </ul>
               </div>
 
@@ -124,7 +107,7 @@
                   Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
                 </p>
                 <div class="read-more">
-                  <a href="blog-single.html">Read More</a>
+                  <a href={% static 'blog-single.html' %}>Read More</a>
                 </div>
               </div>
 
@@ -133,18 +116,18 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/blog/blog-2.jpg' %} alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                <a href={% static 'blog-single.html' %}>Nisi magni odit consequatur autem nulla dolorem</a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href={% static 'blog-single.html' %}>John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href={% static 'blog-single.html' %}><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href={% static 'blog-single.html' %}>12 Comments</a></li>
                 </ul>
               </div>
 
@@ -154,7 +137,7 @@
                   Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
                 </p>
                 <div class="read-more">
-                  <a href="blog-single.html">Read More</a>
+                  <a href={% static 'blog-single.html' %}>Read More</a>
                 </div>
               </div>
 
@@ -163,18 +146,18 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/blog/blog-3.jpg' %} alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
+                <a href={% static 'blog-single.html' %}>Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href={% static 'blog-single.html' %}>John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href={% static 'blog-single.html' %}><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href={% static 'blog-single.html' %}>12 Comments</a></li>
                 </ul>
               </div>
 
@@ -184,7 +167,7 @@
                   Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
                 </p>
                 <div class="read-more">
-                  <a href="blog-single.html">Read More</a>
+                  <a href={% static 'blog-single.html' %}>Read More</a>
                 </div>
               </div>
 
@@ -193,18 +176,18 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <img src={% static 'assets/img/blog/blog-4.jpg' %} alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="blog-single.html">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
+                <a href={% static 'blog-single.html' %}>Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</a>
               </h2>
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href={% static 'blog-single.html' %}>John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href={% static 'blog-single.html' %}><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href={% static 'blog-single.html' %}>12 Comments</a></li>
                 </ul>
               </div>
 
@@ -214,7 +197,7 @@
                   Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
                 </p>
                 <div class="read-more">
-                  <a href="blog-single.html">Read More</a>
+                  <a href={% static 'blog-single.html' %}>Read More</a>
                 </div>
               </div>
 
@@ -222,9 +205,9 @@
 
             <div class="blog-pagination">
               <ul class="justify-content-center">
-                <li><a href="#">1</a></li>
+                <li><a href={% static '#' %}>1</a></li>
                 <li class="active"><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+                <li><a href={% static '#' %}>3</a></li>
               </ul>
             </div>
 
@@ -245,44 +228,44 @@
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
                 <ul>
-                  <li><a href="#">General <span>(25)</span></a></li>
-                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href="#">Travel <span>(5)</span></a></li>
-                  <li><a href="#">Design <span>(22)</span></a></li>
-                  <li><a href="#">Creative <span>(8)</span></a></li>
-                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                  <li><a href={% static '#' %}>General <span>(25)</span></a></li>
+                  <li><a href={% static '#' %}>Lifestyle <span>(12)</span></a></li>
+                  <li><a href={% static '#' %}>Travel <span>(5)</span></a></li>
+                  <li><a href={% static '#' %}>Design <span>(22)</span></a></li>
+                  <li><a href={% static '#' %}>Creative <span>(8)</span></a></li>
+                  <li><a href={% static '#' %}>Educaion <span>(14)</span></a></li>
                 </ul>
               </div><!-- End sidebar categories-->
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog/blog-recent-1.jpg" alt="">
-                  <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-1.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Nihil blanditiis at in nihil autem</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog/blog-recent-2.jpg" alt="">
-                  <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-2.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Quidem autem et impedit</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog/blog-recent-3.jpg" alt="">
-                  <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-3.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Id quia et et ut maxime similique occaecati ut</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                  <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-4.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Laborum corporis quo dara net para</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/blog/blog-recent-5.jpg" alt="">
-                  <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-5.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Et dolores corrupti quae illo quod dolor</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
@@ -291,17 +274,17 @@
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
                 <ul>
-                  <li><a href="#">App</a></li>
-                  <li><a href="#">IT</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Mac</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Creative</a></li>
-                  <li><a href="#">Studio</a></li>
-                  <li><a href="#">Smart</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Marketing</a></li>
+                  <li><a href={% static '#' %}>App</a></li>
+                  <li><a href={% static '#' %}>IT</a></li>
+                  <li><a href={% static '#' %}>Business</a></li>
+                  <li><a href={% static '#' %}>Mac</a></li>
+                  <li><a href={% static '#' %}>Design</a></li>
+                  <li><a href={% static '#' %}>Office</a></li>
+                  <li><a href={% static '#' %}>Creative</a></li>
+                  <li><a href={% static '#' %}>Studio</a></li>
+                  <li><a href={% static '#' %}>Smart</a></li>
+                  <li><a href={% static '#' %}>Tips</a></li>
+                  <li><a href={% static '#' %}>Marketing</a></li>
                 </ul>
               </div><!-- End sidebar tags-->
 
@@ -330,11 +313,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Privacy policy</a></li>
             </ul>
           </div>
 
@@ -349,11 +332,11 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href={% static '#' %} class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href={% static '#' %} class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href={% static '#' %} class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href={% static '#' %} class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href={% static '#' %} class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
@@ -376,26 +359,26 @@
       </div>
       <div class="credits">
     
-        Designed by <a href="https://bootstrap.com/">Bootstrap</a>
+        Designed by <a href={% static '#' %}>Bootstrap</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href={% static '#' %} class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+  
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src={% static 'assets/vendor/purecounter/purecounter.js' %}></script>
+  <script src={% static 'assets/vendor/aos/aos.js' %}></script>
+  <script src={% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
+  <script src={% static 'assets/vendor/glightbox/js/glightbox.min.js' %}></script>
+  <script src={% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}></script>
+  <script src={% static 'assets/vendor/swiper/swiper-bundle.min.js' %}></script>
+  <script src={% static 'assets/vendor/waypoints/noframework.waypoints.js' %}></script>
+  <script src={% static 'assets/vendor/php-email-form/validate.js' %}></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src={% static 'assets/js/main.js' %}></script>
 
 </body>
 
