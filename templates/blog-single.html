@@ -160,7 +160,7 @@
             </article><!-- End blog entry -->
 
             <div class="blog-author d-flex align-items-center">
-              <img src="assets/img/blog/blog-author.jpg" class="rounded-circle float-left" alt="">
+              <img src={% static 'assets/img/blog/blog-author.jpg' %} class="rounded-circle float-left" alt="">
               <div>
                 <h4>Jane Smith</h4>
                 <div class="social-links">
@@ -242,7 +242,7 @@
                 <div class="d-flex">
                   <div class="comment-img"><img src={% static 'assets/img/blog/comments-5.jpg' %} alt=""></div>
                   <div>
-                    <h5><a href={% static">Nolan Davidson</a> <a href={% static#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <h5><a href={% static '#' %}>Nolan Davidson</a> <a href={% static '#' %} class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
                     <time datetime="2020-01-01">01 Jan, 2020</time>
                     <p>
                       Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at.
@@ -255,9 +255,9 @@
 
               <div id="comment-4" class="comment">
                 <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>
+                  <div class="comment-img"><img src={% static 'assets/img/blog/comments-6.jpg' %} alt=""></div>
                   <div>
-                    <h5><a href={% static">Kay Duggan</a> <a href={% static#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <h5><a href={% static '' %}>Kay Duggan</a> <a href={% static '#' %} class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
                     <time datetime="2020-01-01">01 Jan, 2020</time>
                     <p>
                       Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. Cumque sed quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.
@@ -314,38 +314,38 @@
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
                 <ul>
-                  <li><a href={% static '#">General <span>(25)</span></a></li>
-                  <li><a href={% static '#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href={% static '#">Travel <span>(5)</span></a></li>
-                  <li><a href={% static '#">Design <span>(22)</span></a></li>
-                  <li><a href={% static '#">Creative <span>(8)</span></a></li>
-                  <li><a href={% static '#">Educaion <span>(14)</span></a></li>
+                  <li><a href={% static '#' %}>General <span>(25)</span></a></li>
+                  <li><a href={% static '#' %}>Lifestyle <span>(12)</span></a></li>
+                  <li><a href={% static '#' %}>Travel <span>(5)</span></a></li>
+                  <li><a href={% static '#' %}>Design <span>(22)</span></a></li>
+                  <li><a href={% static '#' %}>Creative <span>(8)</span></a></li>
+                  <li><a href={% static '#' %}>Educaion <span>(14)</span></a></li>
                 </ul>
               </div><!-- End sidebar categories-->
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
                 <div class="post-item clearfix">
-                  <img src={% staticassets/img/blog/blog-recent-1.jpg" alt="">
-                  <h4><a href={% static 'blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-1.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %} >Nihil blanditiis at in nihil autem</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src={% static 'assets/img/blog/blog-recent-2.jpg" alt="">
-                  <h4><a href={% static 'blog-single.html">Quidem autem et impedit</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-2.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Quidem autem et impedit</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src={% static 'assets/img/blog/blog-recent-3.jpg" alt="">
-                  <h4><a href={% static 'blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <img src={% static 'assets/img/blog/blog-recent-3.jpg' %} alt="">
+                  <h4><a href={% static 'blog-single.html' %}>Id quia et et ut maxime similique occaecati ut</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
                 <div class="post-item clearfix">
                   <img src="assets/img/blog/blog-recent-4.jpg" alt="">
-                  <h4><a href={% static 'blog-single.html">Laborum corporis quo dara net para</a></h4>
+                  <h4><a href={% static 'blog-single.html' %}>Laborum corporis quo dara net para</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
                 </div>
 
@@ -360,17 +360,17 @@
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
                 <ul>
-                  <li><a href="#">App</a></li>
-                  <li><a href="#">IT</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Mac</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Creative</a></li>
-                  <li><a href="#">Studio</a></li>
-                  <li><a href="#">Smart</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Marketing</a></li>
+                  <li><a href={% static '#' %}>App</a></li>
+                  <li><a href={% static '#' %}>IT</a></li>
+                  <li><a href={% static '#' %}>Business</a></li>
+                  <li><a href={% static '#' %}>Mac</a></li>
+                  <li><a href={% static '#' %}>Design</a></li>
+                  <li><a href={% static '#' %}>Office</a></li>
+                  <li><a href={% static '#' %}>Creative</a></li>
+                  <li><a href={% static '#' %}>Studio</a></li>
+                  <li><a href={% static '#' %}>Smart</a></li>
+                  <li><a href={% static '#' %}>Tips</a></li>
+                  <li><a href={% static '#' %}>Marketing</a></li>
                 </ul>
               </div><!-- End sidebar tags-->
 
@@ -399,11 +399,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href={% static '#' %}>Privacy policy</a></li>
             </ul>
           </div>
 
@@ -418,11 +418,11 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href={% static '#' %} class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href={% static '#' %} class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href={% static '#' %} class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href={% static '#' %} class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href={% static '#' %} class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
           </div>
@@ -445,26 +445,26 @@
       </div>
       <div class="credits">
    
-        Designed by <a href="https://bootstrap.com/">Bootstrap</a>
+        Designed by <a href={% static 'https://bootstrap.com/' %}>Bootstrap</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href={% static '#' %} class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src={% static 'assets/vendor/purecounter/purecounter.js' %} ></script>
+  <script src={% static 'assets/vendor/aos/aos.js' %} ></script>
+  <script src={% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %} ></script>
+  <script src={% static 'assets/vendor/glightbox/js/glightbox.min.js' %} ></script>
+  <script src={% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %} ></script>
+  <script src={% static 'assets/vendor/swiper/swiper-bundle.min.js' %} ></script>
+  <script src={% static 'assets/vendor/waypoints/noframework.waypoints.js' %} ></script>
+  <script src={% static 'assets/vendor/php-email-form/validate.js' %} ></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src={% static 'assets/js/main.js' %} ></script>
 
 </body>
 
