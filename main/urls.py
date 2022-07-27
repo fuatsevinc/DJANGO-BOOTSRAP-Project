@@ -20,10 +20,12 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from company.views import index
+# from blog.views import blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
+  # path('blog/', blog, name='blog'),
 ]
 
 
